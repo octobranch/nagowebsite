@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Vehículos | Nago Car Rental</title>
+    <meta name="description" content="Reserva tu vehículo en Cancún y Riviera Maya. Proceso sencillo y seguro con entrega en aeropuerto, hotel o cualquier ubicación.">
+    <meta name="keywords" content="reserva de autos cancún, renta de coches, alquiler de autos, booking car rental, reserva en línea">
+    <meta name="author" content="Nago Car Rental">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.nagocarrentals.com/reservas">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/529981093631" class="whatsapp-float" target="_blank" aria-label="WhatsApp" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Nago Car Rental">
+                <img src="https://i.ibb.co/Mx1QhM5J/nago-logo.png" alt="Nago Car Rental - Renta de autos en Cancún" class="logo-image">
+                <div class="logo-text">
+                    <div class="logo-main">NAGO</div>
+                    <div class="logo-sub">CAR RENTAL</div>
+                </div>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Quiénes Somos</a></li>
+                    <li><a href="vehiculos.html">Vehículos</a></li>
+                    <li><a href="reservas.html" class="active">Reservas</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="language-toggle" id="language-toggle">
+                    <i class="fas fa-globe"></i> EN
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menú móvil">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-content">
+            <h1>Reserva Tu Vehículo</h1>
+            <p>Proceso sencillo y seguro para garantizar tu movilidad en Cancún y Riviera Maya</p>
+        </div>
+    </section>
+
+    <!-- Proceso de Reserva Section -->
+    <section class="proceso-reserva">
+        <div class="section-header">
+            <h2>Proceso de Reserva</h2>
+            <p class="section-subtitle">Sigue estos simples pasos para asegurar tu vehículo ideal</p>
+        </div>
+        
+        <div class="pasos-reserva">
+            <div class="paso-item">
+                <div class="paso-numero">1</div>
+                <div class="paso-content">
+                    <h3>Selecciona tu vehículo</h3>
+                    <p>Explora nuestra flota y elige el vehículo que mejor se adapte a tus necesidades de viaje y presupuesto.</p>
+                </div>
+            </div>
+            
+            <div class="paso-item">
+                <div class="paso-numero">2</div>
+                <div class="paso-content">
+                    <h3>Completa el formulario</h3>
+                    <p>Proporciona tus datos personales, información del vuelo y detalles de tu estancia en Riviera Maya.</p>
+                </div>
+            </div>
+            
+            <div class="paso-item">
+                <div class="paso-numero">3</div>
+                <div class="paso-content">
+                    <h3>Confirma tu reserva</h3>
+                    <p>Recibirás una confirmación por correo electrónico con todos los detalles de tu reserva y próximos pasos.</p>
+                </div>
+            </div>
+            
+            <div class="paso-item">
+                <div class="paso-numero">4</div>
+                <div class="paso-content">
+                    <h3>Recibe tu vehículo</h3>
+                    <p>Te entregaremos el vehículo en la ubicación y hora acordadas, listo para comenzar tu aventura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Reserva Section -->
+    <section class="formulario-reserva" style="background-color: #f9f9f9;">
+        <div class="section-header">
+            <h2>Formulario de Reserva</h2>
+            <p class="section-subtitle">Completa la información solicitada para procesar tu reserva</p>
+        </div>
+        
+        <div class="reserva-container">
+            <div class="reserva-form">
+                <form id="reserva-form" action="https://formsubmit.co/reservaciones@nagocarrentals.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nueva reserva desde el sitio web">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://www.nagocarrentals.com/gracias-reserva.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-section">
+                        <h3>Información Personal</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pais">País de residencia *</label>
+                                <input type="text" id="pais" name="pais" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Detalles de la Renta</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="vehiculo">Vehículo deseado *</label>
+                                <select id="vehiculo" name="vehiculo" required>
+                                    <option value="">Selecciona un vehículo</option>
+                                    <option value="economico">Vehículo Económico ($40 USD/día)</option>
+                                    <option value="fullsize">Fullsize ($50 USD/día)</option>
+                                    <option value="suv">SUV ($80 USD/día)</option>
+                                    <option value="suv-economico">SUV Económico ($95 USD/día)</option>
+                                    <option value="minivan">Minivan Familiar ($120 USD/día)</option>
+                                    <option value="van">Van para Grupos ($140 USD/día)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha-recojo">Fecha de recogida *</label>
+                                <input type="date" id="fecha-recojo" name="fecha-recojo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hora-recojo">Hora de recogida *</label>
+                                <input type="time" id="hora-recojo" name="hora-recojo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha-entrega">Fecha de entrega *</label>
+                                <input type="date" id="fecha-entrega" name="fecha-entrega" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lugar-recojo">Lugar de recogida *</label>
+                                <select id="lugar-recojo" name="lugar-recojo" required>
+                                    <option value="">Selecciona un lugar</option>
+                                    <option value="aeropuerto">Aeropuerto de Cancún (CUN)</option>
+                                    <option value="hotel-cancun">Hotel en Cancún</option>
+                                    <option value="hotel-playa">Hotel en Playa del Carmen</option>
+                                    <option value="hotel-tulum">Hotel en Tulum</option>
+                                    <option value="otro">Otra ubicación</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="hotel-container" style="display: none;">
+                                <label for="hotel">Nombre del hotel</label>
+                                <input type="text" id="hotel" name="hotel">
+                            </div>
+                            <div class="form-group" id="otra-ubicacion-container" style="display: none;">
+                                <label for="otra-ubicacion">Especificar ubicación</label>
+                                <input type="text" id="otra-ubicacion" name="otra-ubicacion">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Información Adicional</h3>
+                        <div class="form-group">
+                            <label for="vuelo">Número de vuelo (si aplica)</label>
+                            <input type="text" id="vuelo" name="vuelo">
+                        </div>
+                        <div class="form-group">
+                            <label for="comentarios">Comentarios o solicitudes especiales</label>
+                            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">He leído y acepto los <a href="terminos-condiciones.html" target="_blank">términos y condiciones</a> y la <a href="politica-privacidad.html" target="_blank">política de privacidad</a> *</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-large">
+                        <i class="fas fa-paper-plane"></i> Enviar Reserva
+                    </button>
+                </form>
+            </div>
+            
+            <div class="reserva-info">
+                <div class="info-card">
+                    <h3>Información Importante</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Requisitos para rentar</h4>
+                            <ul>
+                                <li>Licencia de conducir vigente (mínimo 2 años)</li>
+                                <li>Identificación oficial</li>
+                                <li>Tarjeta de crédito a nombre del conductor</li>
+                                <li>Edad mínima: 21 años</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Políticas de Pago</h4>
+                            <ul>
+                                <li>Depósito de seguridad requerido</li>
+                                <li>Se aceptan tarjetas de crédito principales</li>
+                                <li>Precios en USD incluyen seguro básico</li>
+                                <li>Impuestos y cargos adicionales aplicables</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Tiempos de Entrega</h4>
+                            <ul>
+                                <li>Entrega en aeropuerto: 30-45 min después del aterrizaje</li>
+                                <li>Entrega en hotel: En horario acordado</li>
+                                <li>Reservas con menos de 24h: Sujetas a disponibilidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contacto-directo">
+                    <h3>¿Necesitas ayuda con tu reserva?</h3>
+                    <p>Contáctanos directamente por WhatsApp para atención inmediata</p>
+                    <a href="https://wa.me/529981093631" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes Section -->
+    <section class="faq-reserva">
+        <div class="section-header">
+            <h2>Preguntas Frecuentes</h2>
+            <p class="section-subtitle">Resolvemos tus dudas sobre el proceso de reserva</p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Cuánto tiempo debo esperar para la confirmación de mi reserva?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Todas las reservas son confirmadas dentro de las 24 horas siguientes. En temporada alta, el tiempo de respuesta puede extenderse hasta 48 horas. Para reservas urgentes, recomendamos contactarnos directamente por WhatsApp.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Puedo modificar o cancelar mi reserva?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, puedes modificar o cancelar tu reserva sin costo hasta 48 horas antes de la fecha de recogida. Las cancelaciones con menos de 48 horas de anticipación están sujetas a una tarifa de cancelación equivalente a un día de renta.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Qué sucede si mi vuelo se retrasa?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>En caso de retraso de vuelo, por favor infórmanos inmediatamente vía WhatsApp o correo electrónico. Ajustaremos el horario de entrega sin cargo adicional, sujeto a disponibilidad del vehículo.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Qué incluye el precio de la renta?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>El precio incluye: vehículo con tanque lleno, seguro básico de responsabilidad civil (obligatorio en México), asistencia vial 24/7 y kilometraje ilimitado. No incluye: gasolina, peajes, multas ni daños al vehículo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Tienes dudas sobre tu reserva?</h2>
+            <p>Nuestro equipo está disponible para ayudarte a elegir el vehículo perfecto para tu viaje</p>
+            <div class="cta-buttons">
+                <a href="contacto.html" class="btn btn-large">Contactar Asesor</a>
+                <a href="https://wa.me/529981093631" class="btn btn-outline" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Nago Car Rental</h3>
+                <p>Su mejor opción en renta de autos en Cancún y Riviera Maya. Servicio confiable, precios competitivos y vehículos modernos.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Nagocarrental" aria-label="Facebook" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nagocarrental" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/529981093631" aria-label="WhatsApp" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Quiénes Somos</a></li>
+                    <li><a href="vehiculos.html"><i class="fas fa-chevron-right"></i> Vehículos</a></li>
+                    <li><a href="reservas.html"><i class="fas fa-chevron-right"></i> Reservas</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Blvrd. Luis D Colosio, Alfredo V Bonfil, Cancún</li>
+                    <li><i class="fas fa-envelope"></i> reservaciones@nagocarrentals.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +52 998 109 3631</li>
+                    <li><i class="fas fa-clock"></i> De Lunes a Domingo de 08:00 a 19:00 hrs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="legal-links">
+            <a href="politica-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-condiciones.html">Términos y Condiciones</a>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Nago Car Rental. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
