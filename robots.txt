@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /config/
+
+Sitemap: https://www.nagocarrentals.com/sitemap.xml
+
+# Directivas para motores de búsqueda específicos
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Crawl-delay: 2
+
+# Optimización para dispositivos móviles
+User-agent: *
+Allow: /m/
+Allow: /mobile/
+
+# No rastrear archivos específicos
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.ppt$
+Disallow: /*.pptx$
+
+# No rastrear parámetros de URL específicos
+Disallow: /*?sessionid=
+Disallow: /*?referrer=
+Disallow: /*?token=
+
+# Permitir rastreo de recursos importantes
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /fonts/
