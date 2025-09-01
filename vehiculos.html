@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Flota de Vehículos | Nago Car Rental</title>
+    <meta name="description" content="Descubre nuestra completa flota de vehículos en Cancún y Riviera Maya. Desde económicos hasta SUVs y vans para grupos. Precios competitivos y entrega inmediata.">
+    <meta name="keywords" content="renta de autos cancún, flota de vehículos, carros en renta, SUVs cancún, autos económicos, vans para grupos">
+    <meta name="author" content="Nago Car Rental">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.nagocarrentals.com/vehiculos">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/529981093631" class="whatsapp-float" target="_blank" aria-label="WhatsApp" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Nago Car Rental">
+                <img src="https://i.ibb.co/Mx1QhM5J/nago-logo.png" alt="Nago Car Rental - Renta de autos en Cancún" class="logo-image">
+                <div class="logo-text">
+                    <div class="logo-main">NAGO</div>
+                    <div class="logo-sub">CAR RENTAL</div>
+                </div>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Quiénes Somos</a></li>
+                    <li><a href="vehiculos.html" class="active">Vehículos</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="language-toggle" id="language-toggle">
+                    <i class="fas fa-globe"></i> EN
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menú móvil">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-content">
+            <h1>Nuestra Flota</h1>
+            <p>Descubre el vehículo perfecto para tu aventura en la Riviera Maya</p>
+        </div>
+    </section>
+
+    <!-- Filtros Section -->
+    <section class="filtros">
+        <div class="section-header">
+            <h2>Encuentra tu Vehículo Ideal</h2>
+            <p class="section-subtitle">Filtra por categoría para encontrar el auto perfecto para tus necesidades</p>
+        </div>
+        
+        <div class="filtros-container">
+            <div class="filtros-buttons">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="economico">Económicos</button>
+                <button class="filtro-btn" data-categoria="suv">SUVs</button>
+                <button class="filtro-btn" data-categoria="lujo">De Lujo</button>
+                <button class="filtro-btn" data-categoria="van">Vans</button>
+            </div>
+            
+            <div class="filtros-busqueda">
+                <div class="busqueda-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="buscar-vehiculo" placeholder="Buscar vehículo por nombre...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehículos Grid Section -->
+    <section class="vehiculos-completo">
+        <div class="vehiculos-grid" id="vehiculos-grid">
+            <!-- Vehículo Económico -->
+            <div class="vehicle-card" data-categoria="economico">
+                <div class="vehicle-image">
+                    <img src="https://i.ibb.co/ynS7bShC/Cat-logo-web-economico.png" alt="Vehículo Económico para renta en Cancún - Nago Car Rental" loading="lazy">
+                    <div class="vehicle-badge">POPULAR</div>
+                </div>
+                <div class="vehicle-info">
+                    <h3>Vehículo Económico</h3>
+                    <span class="vehicle-type">Perfecto para viajes individuales o parejas</span>
+                    <ul class="vehicle-features">
+                        <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                        <li><i class="fas fa-user-friends"></i> 4-5 pasajeros</li>
+                        <li><i class="fas fa-cogs"></i> Automático/Manual</li>
+                        <li><i class="fas fa-gas-pump"></i> Excelente rendimiento</li>
+                    </ul>
+                    <div class="vehicle-price">
+                        <span>Desde</span> <span class="price-value">$40</span> <span class="price-label">USD/día</span>
+                    </div>
+                    <div class="vehicle-actions">
+                        <a href="https://wa.me/529981093631?text=Hola%20Nago%20Car%20Rental!%20Estoy%20interesado%20en%20el%20Vehículo%20Económico.%20¿Podrían%20darme%20más%20información?" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                        <a href="#modal-economico" class="btn btn-outline modal-trigger">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fullsize -->
+            <div class="vehicle-card" data-categoria="lujo">
+                <div class="vehicle-image">
+                    <img src="https://i.ibb.co/vvKQSmWt/Cat-logo-web-Full-Size.png" alt="Vehículo de Lujo para renta en Cancún - Nago Car Rental" loading="lazy">
+                </div>
+                <div class="vehicle-info">
+                    <h3>Fullsize</h3>
+                    <span class="vehicle-type">Experimenta el máximo comfort y estilo</span>
+                    <ul class="vehicle-features">
+                        <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                        <li><i class="fas fa-user-friends"></i> 4-5 pasajeros</li>
+                        <li><i class="fas fa-cogs"></i> Transmisión automática</li>
+                        <li><i class="fas fa-car"></i> Asientos cómodos</li>
+                    </ul>
+                    <div class="vehicle-price">
+                        <span>Desde</span> <span class="price-value">$50</span> <span class="price-label">USD/día</span>
+                    </div>
+                    <div class="vehicle-actions">
+                        <a href="https://wa.me/529981093631?text=Hola%20Nago%20Car%20Rental!%20Estoy%20interesado%20en%20el%20Vehículo%20Fullsize.%20¿Podrían%20darme%20más%20información?" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                        <a href="#modal-fullsize" class="btn btn-outline modal-trigger">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SUV -->
+            <div class="vehicle-card" data-categoria="suv">
+                <div class="vehicle-image">
+                    <img src="https://i.ibb.co/q3FwxK07/Cat-logo-web-SUV.png" alt="SUV para renta en Cancún - Nago Car Rental" loading="lazy">
+                </div>
+                <div class="vehicle-info">
+                    <h3>SUV</h3>
+                    <span class="vehicle-type">Confort y espacio para toda la familia</span>
+                    <ul class="vehicle-features">
+                        <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                        <li><i class="fas fa-user-friends"></i> 5 pasajeros</li>
+                        <li><i class="fas fa-cogs"></i> Transmisión automática</li>
+                        <li><i class="fas fa-suitcase"></i> Amplio espacio de maletero</li>
+                    </ul>
+                    <div class="vehicle-price">
+                        <span>Desde</span> <span class="price-value">$80</span> <span class="price-label">USD/día</span>
+                    </div>
+                    <div class="vehicle-actions">
+                        <a href="https://wa.me/529981093631?text=Hola%20Nago%20Car%20Rental!%20Estoy%20interesado%20en%20la%20SUV.%20¿Podrían%20darme%20más%20información?" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                        <a href="#modal-suv" class="btn btn-outline modal-trigger">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SUV Economica-->
+            <div class="vehicle-card" data-categoria="suv">
+                <div class="vehicle-image">
+                    <img src="https://i.ibb.co/GfMqSdH1/Cat-logo-web-SUV-Economica.png" alt="SUV Economica para renta en Cancún - Nago Car Rental" loading="lazy">
+                </div>
+                <div class="vehicle-info">
+                    <h3>SUV Económico</h3>
+                    <span class="vehicle-type">Confort y espacio para toda la familia</span>
+                    <ul class="vehicle-features">
+                        <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                        <li><i class="fas fa-user-friends"></i> 5-7 pasajeros</li>
+                        <li><i class="fas fa-cogs"></i> Transmisión automática</li>
+                        <li><i class="fas fa-suitcase"></i> Amplio espacio de maletero</li>
+                    </ul>
+                    <div class="vehicle-price">
+                        <span>Desde</span> <span class="price-value">$95</span> <span class="price-label">USD/día</span>
+                    </div>
+                    <div class="vehicle-actions">
+                        <a href="https://wa.me/529981093631?text=Hola%20Nago%20Car%20Rental!%20Estoy%20interesado%20en%20la%20SUV%20Economica.%20¿Podrían%20darme%20más%20información?" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                        <a href="#modal-suv-economica" class="btn btn-outline modal-trigger">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minivan Familiar -->
+            <div class="vehicle-card" data-categoria="van">
+                <div class="vehicle-image">
+                    <img src="https://i.ibb.co/B5cXZfTQ/Cat-logo-web-Minivan-Familiar.png" alt="Minivan Familiar para renta en Cancún - Nago Car Rental" loading="lazy">
+                </div>
+                <div class="vehicle-info">
+                    <h3>Minivan Familiar</h3>
+                    <span class="vehicle-type">Confort y espacio para toda la familia</span>
+                    <ul class="vehicle-features">
+                        <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                        <li><i class="fas fa-user-friends"></i> 7-8 pasajeros</li>
+                        <li><i class="fas fa-cogs"></i> Transmisión automática</li>
+                        <li><i class="fas fa-suitcase"></i> Amplio espacio de maletero</li>
+                    </ul>
+                    <div class="vehicle-price">
+                        <span>Desde</span> <span class="price-value">$120</span> <span class="price-label">USD/día</span>
+                    </div>
+                    <div class="vehicle-actions">
+                        <a href="https://wa.me/529981093631?text=Hola%20Nago%20Car%20Rental!%20Estoy%20interesado%20en%20la%20Minivan%20Familiar.%20¿Podrían%20darme%20más%20información?" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                        <a href="#modal-minivan" class="btn btn-outline modal-trigger">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Van Group-->
+            <div class="vehicle-card" data-categoria="van">
+                <div class="vehicle-image">
+                    <img src="https://i.ibb.co/v6Wrdfvq/Cat-logo-web-Van-Group.png" alt="Van para Grupos para renta in Cancún - Nago Car Rental" loading="lazy">
+                    <div class="vehicle-badge">RECOMENDADO</div>
+                </div>
+                <div class="vehicle-info">
+                    <h3>Van para Grupos</h3>
+                    <span class="vehicle-type">Ideal para grupos grandes o viajes extensos</span>
+                    <ul class="vehicle-features">
+                        <li><i class="fas fa-snowflake"></i> Aire acondicionado</li>
+                        <li><i class="fas fa-user-friends"></i> 9-12 pasajeros</li>
+                        <li><i class="fas fa-cogs"></i> Transmisión automática</li>
+                        <li><i class="fas fa-luggage-cart"></i> Amplio espacio de carga</li>
+                    </ul>
+                    <div class="vehicle-price">
+                        <span>Desde</span> <span class="price-value">$140</span> <span class="price-label">USD/día</span>
+                    </div>
+                    <div class="vehicle-actions">
+                        <a href="https://wa.me/529981093631?text=Hola%20Nago%20Car%20Rental!%20Estoy%20interesado%20en%20la%20Van%20para%20Grupos.%20¿Podrían%20darme%20más%20información?" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Solicitar
+                        </a>
+                        <a href="#modal-van" class="btn btn-outline modal-trigger">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparativa Section -->
+    <section class="comparativa" style="background-color: #f9f9f9;">
+        <div class="section-header">
+            <h2>Comparativa de Vehículos</h2>
+            <p class="section-subtitle">Encuentra el vehículo perfecto según tus necesidades</p>
+        </div>
+        
+        <div class="comparativa-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vehículo</th>
+                        <th>Capacidad</th>
+                        <th>Transmisión</th>
+                        <th>Maletero</th>
+                        <th>Precio/Día</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vehículo Económico</td>
+                        <td>4-5 personas</td>
+                        <td>Auto/Manual</td>
+                        <td>Mediano</td>
+                        <td>$40 USD</td>
+                        <td><a href="#modal-economico" class="btn btn-small modal-trigger">Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fullsize</td>
+                        <td>4-5 personas</td>
+                        <td>Automática</td>
+                        <td>Grande</td>
+                        <td>$50 USD</td>
+                        <td><a href="#modal-fullsize" class="btn btn-small modal-trigger">Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>SUV</td>
+                        <td>5 personas</td>
+                        <td>Automática</td>
+                        <td>Amplio</td>
+                        <td>$80 USD</td>
+                        <td><a href="#modal-suv" class="btn btn-small modal-trigger">Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>SUV Económico</td>
+                        <td>5-7 personas</td>
+                        <td>Automática</td>
+                        <td>Amplio</td>
+                        <td>$95 USD</td>
+                        <td><a href="#modal-suv-economica" class="btn btn-small modal-trigger">Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Minivan Familiar</td>
+                        <td>7-8 personas</td>
+                        <td>Automática</td>
+                        <td>Muy Amplio</td>
+                        <td>$120 USD</td>
+                        <td><a href="#modal-minivan" class="btn btn-small modal-trigger">Detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>Van para Grupos</td>
+                        <td>9-12 personas</td>
+                        <td>Automática</td>
+                        <td>Extra Grande</td>
+                        <td>$140 USD</td>
+                        <td><a href="#modal-van" class="btn btn-small modal-trigger">Detalles</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿No encuentras lo que buscas?</h2>
+            <p>Contáctanos directamente y encontraremos el vehículo perfecto para tus necesidades</p>
+            <div class="cta-buttons">
+                <a href="contacto.html" class="btn btn-large">Contactar Asesor</a>
+                <a href="https://wa.me/529981093631" class="btn btn-outline" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Nago Car Rental</h3>
+                <p>Su mejor opción en renta de autos en Cancún y Riviera Maya. Servicio confiable, precios competitivos y vehículos modernos.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Nagocarrental" aria-label="Facebook" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nagocarrental" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/529981093631" aria-label="WhatsApp" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Quiénes Somos</a></li>
+                    <li><a href="vehiculos.html"><i class="fas fa-chevron-right"></i> Vehículos</a></li>
+                    <li><a href="reservas.html"><i class="fas fa-chevron-right"></i> Reservas</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Blvrd. Luis D Colosio, Alfredo V Bonfil, Cancún</li>
+                    <li><i class="fas fa-envelope"></i> reservaciones@nagocarrentals.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +52 998 109 3631</li>
+                    <li><i class="fas fa-clock"></i> De Lunes a Domingo de 08:00 a 19:00 hrs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="legal-links">
+            <a href="politica-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-condiciones.html">Términos y Condiciones</a>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Nago Car Rental. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modales para detalles de vehículos -->
+    <div id="modal-economico" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Vehículo Económico</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="https://i.ibb.co/ynS7bShC/Cat-logo-web-economico.png" alt="Vehículo Económico">
+                </div>
+                <div class="modal-details">
+                    <h4>Descripción</h4>
+                    <p>Perfecto para viajes individuales o parejas que buscan economía sin sacrificar comodidad. Ideal para moverse por la ciudad y explorar la Riviera Maya.</p>
+                    
+                    <h4>Especificaciones</h4>
+                    <ul>
+                        <li><strong>Capacidad:</strong> 4-5 pasajeros</li>
+                        <li><strong>Maletero:</strong> 2-3 maletas medianas</li>
+                        <li><strong>Transmisión:</strong> Automática o Manual</li>
+                        <li><strong>Aire acondicionado:</strong> Sí</li>
+                        <li><strong>Combustible:</strong> Gasolina (excelente rendimiento)</li>
+                    </ul>
+                    
+                    <h4>Precio</h4>
+                    <p><strong>Desde $40 USD por día</strong></p>
+                    <p class="note">* Precio incluye seguro básico. Impuestos y cargos adicionales aplicables.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="reservas.html" class="btn">Reservar Ahora</a>
+                <a href="https://wa.me/529981093631" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
