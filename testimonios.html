@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonios de Clientes | Nago Car Rental</title>
+    <meta name="description" content="Lee las experiencias reales de nuestros clientes en Cancún y Riviera Maya. Opiniones verificadas de viajeros que han confiado en nuestros servicios de renta de autos.">
+    <meta name="keywords" content="testimonios, opiniones, reseñas, experiencias clientes, renta de autos cancún, comentarios">
+    <meta name="author" content="Nago Car Rental">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.nagocarrentals.com/testimonios">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/529981093631" class="whatsapp-float" target="_blank" aria-label="WhatsApp" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Nago Car Rental">
+                <img src="https://i.ibb.co/Mx1QhM5J/nago-logo.png" alt="Nago Car Rental - Renta de autos en Cancún" class="logo-image">
+                <div class="logo-text">
+                    <div class="logo-main">NAGO</div>
+                    <div class="logo-sub">CAR RENTAL</div>
+                </div>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Quiénes Somos</a></li>
+                    <li><a href="vehiculos.html">Vehículos</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="testimonios.html" class="active">Testimonios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="language-toggle" id="language-toggle">
+                    <i class="fas fa-globe"></i> EN
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menú móvil">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-content">
+            <h1>Testimonios de Clientes</h1>
+            <p>Descubre las experiencias reales de quienes han confiado en nuestros servicios</p>
+        </div>
+    </section>
+
+    <!-- Estadísticas Section -->
+    <section class="estadisticas-testimonios">
+        <div class="section-header">
+            <h2>Nuestra Reputación en Números</h2>
+            <p class="section-subtitle">La satisfacción de nuestros clientes es nuestra mayor prioridad</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-count="98">0</div>
+                <div class="stat-label">Clientes Satisfechos</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-number" data-count="4.9">0</div>
+                <div class="stat-label">Calificación Promedio</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-number" data-count="150">0</div>
+                <div class="stat-label">Reseñas en Google</div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-number" data-count="95">0</div>
+                <div class="stat-label">Clientes que Repiten</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros Testimonios -->
+    <section class="filtros-testimonios">
+        <div class="section-header">
+            <h2>Explora Nuestros Testimonios</h2>
+            <p class="section-subtitle">Filtra por calificación o fuente para encontrar experiencias relevantes</p>
+        </div>
+        
+        <div class="filtros-container">
+            <div class="filtros-buttons">
+                <button class="filtro-btn active" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="5">5 Estrellas</button>
+                <button class="filtro-btn" data-filter="4">4+ Estrellas</button>
+                <button class="filtro-btn" data-filter="google">Google Maps</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Grid Section -->
+    <section class="testimonios-completo">
+        <div class="testimonios-grid" id="testimonios-container">
+            <!-- Los testimonios se cargarán dinámicamente con JavaScript -->
+        </div>
+        
+        <div class="testimonios-loading" id="testimonios-loading">
+            <div class="loading-spinner"></div>
+            <p>Cargando testimonios...</p>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="google-reviews" style="background-color: #f9f9f9;">
+        <div class="section-header">
+            <h2>Reseñas en Google Maps</h2>
+            <p class="section-subtitle">Opiniones verificadas de clientes reales en nuestra página de Google</p>
+        </div>
+        
+        <div class="google-reviews-container">
+            <div class="google-info">
+                <div class="google-rating">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.9/5</span>
+                    </div>
+                    <div class="rating-total">Basado en 150+ reseñas</div>
+                </div>
+                
+                <div class="google-actions">
+                    <a href="https://g.page/r/Cgw4TlNGt7K-EB0/review" class="btn" target="_blank" rel="noopener">
+                        <i class="fab fa-google"></i> Dejar una Reseña
+                    </a>
+                    <a href="https://g.page/r/Cgw4TlNGt7K-EB0" class="btn btn-outline" target="_blank" rel="noopener">
+                        <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                    </a>
+                </div>
+            </div>
+            
+            <div class="google-reviews-grid">
+                <!-- Reseñas destacadas de Google -->
+                <div class="google-review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Martínez">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Ana Martínez</h4>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-date">Hace 2 semanas</div>
+                    </div>
+                    <div class="review-content">
+                        <p>"Excelente servicio! Rentamos una SUV para nuestra familia y todo fue perfecto. El vehículo estaba impecable y el personal fue muy amable. Definitivamente los recomendamos."</p>
+                    </div>
+                </div>
+                
+                <div class="google-review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Carlos López">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Carlos López</h4>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-date">Hace 1 mes</div>
+                    </div>
+                    <div class="review-content">
+                        <p>"Por primera vez rentando auto en México y la experiencia fue excelente. Precios justos, vehículo en perfectas condiciones y entrega puntual en el aeropuerto. ¡Volveré a usarlos!"</p>
+                    </div>
+                </div>
+                
+                <div class="google-review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Laura García">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Laura García</h4>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-date">Hace 2 meses</div>
+                    </div>
+                    <div class="review-content">
+                        <p>"Increíble servicio al cliente. Tuve un pequeño problema con el GPS y me ayudaron inmediatamente por WhatsApp a cualquier hora. Eso es lo que llamo servicio de verdad."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonios Section -->
+    <section class="video-testimonios">
+        <div class="section-header">
+            <h2>Testimonios en Video</h2>
+            <p class="section-subtitle">Experiencias reales capturadas por nuestros clientes</p>
+        </div>
+        
+        <div class="video-container">
+            <div class="video-placeholder">
+                <div class="video-icon">
+                    <i class="fas fa-play"></i>
+                </div>
+                <h3>Próximamente</h3>
+                <p>Estamos recopilando testimonios en video de nuestros clientes satisfechos</p>
+            </div>
+            
+            <div class="video-call">
+                <h3>¿Te gustaría aparecer en nuestros testimonios?</h3>
+                <p>Si has tenido una experiencia positiva con nosotros, compártela en video y podrías aparecer en esta sección.</p>
+                <a href="https://wa.me/529981093631" class="btn" target="_blank" rel="noopener">
+                    <i class="fas fa-video"></i> Compartir Mi Experiencia
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Listo para vivir tu propia experiencia?</h2>
+            <p>Únete a los cientos de clientes satisfechos y descubre por qué somos la mejor opción en renta de autos en Cancún</p>
+            <div class="cta-buttons">
+                <a href="vehiculos.html" class="btn btn-large">Ver Vehículos</a>
+                <a href="reservas.html" class="btn btn-outline">Reservar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Nago Car Rental</h3>
+                <p>Su mejor opción en renta de autos en Cancún y Riviera Maya. Servicio confiable, precios competitivos y vehículos modernos.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Nagocarrental" aria-label="Facebook" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nagocarrental" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/529981093631" aria-label="WhatsApp" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-chevron-right"></i> Quiénes Somos</a></li>
+                    <li><a href="vehiculos.html"><i class="fas fa-chevron-right"></i> Vehículos</a></li>
+                    <li><a href="reservas.html"><i class="fas fa-chevron-right"></i> Reservas</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Blvrd. Luis D Colosio, Alfredo V Bonfil, Cancún</li>
+                    <li><i class="fas fa-envelope"></i> reservaciones@nagocarrentals.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +52 998 109 3631</li>
+                    <li><i class="fas fa-clock"></i> De Lunes a Domingo de 08:00 a 19:00 hrs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="legal-links">
+            <a href="politica-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-condiciones.html">Términos y Condiciones</a>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Nago Car Rental. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
