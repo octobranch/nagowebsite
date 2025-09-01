@@ -2292,3 +2292,449 @@ footer {
         width: 200px;
     }
 }
+/* Estilos específicos para la página Contacto */
+
+/* Información de Contacto Section */
+.info-contacto {
+    padding: 5rem 2rem;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.contacto-card {
+    background: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.contacto-card h3 {
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+    font-size: 1.4rem;
+}
+
+.contacto-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.contacto-card .btn {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.contacto-detail {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: auto;
+}
+
+/* Horarios Section */
+.horarios {
+    padding: 5rem 2rem;
+}
+
+.horarios-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.horarios-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.horarios-info {
+    margin-bottom: 2rem;
+}
+
+.horario-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.horario-item:last-child {
+    border-bottom: none;
+}
+
+.horario-item.destacado {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    margin-top: 1rem;
+}
+
+.dia {
+    font-weight: 600;
+}
+
+.horas {
+    color: #666;
+}
+
+.horario-item.destacado .horas {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.horarios-nota {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary-color);
+}
+
+.horarios-nota h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.horarios-nota p {
+    color: #666;
+    margin: 0;
+}
+
+/* Formulario de Contacto Section */
+.formulario-contacto {
+    padding: 5rem 2rem;
+}
+
+.formulario-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.formulario-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(230, 0, 0, 0.1);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.form-checkbox input {
+    margin-right: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.form-checkbox label {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.formulario-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formulario-info .info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.formulario-info h3 {
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+    font-size: 1.3rem;
+}
+
+.formulario-info ul {
+    list-style: none;
+    margin: 0;
+}
+
+.formulario-info li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.formulario-info li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.formulario-info p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Mapa y Ubicación Section */
+.mapa-ubicacion {
+    padding: 5rem 2rem;
+}
+
+.mapa-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.mapa {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 450px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.ubicacion-info {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    height: fit-content;
+}
+
+.ubicacion-info h3 {
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+    font-size: 1.4rem;
+}
+
+.direccion, .instrucciones, .estacionamiento {
+    margin-bottom: 2rem;
+}
+
+.direccion h4, .instrucciones h4, .estacionamiento h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-color);
+    font-size: 1.1rem;
+}
+
+.direccion p {
+    color: #666;
+    margin: 0;
+}
+
+.instrucciones ul {
+    list-style: none;
+    margin: 0;
+}
+
+.instrucciones li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #666;
+}
+
+.instrucciones li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.estacionamiento p {
+    color: #666;
+    margin: 0;
+}
+
+/* FAQ Contacto Section */
+.faq-contacto {
+    padding: 5rem 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.faq-item {
+    background: white;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+.faq-question i {
+    transition: var(--transition);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive para página Contacto */
+@media (max-width: 992px) {
+    .formulario-container,
+    .mapa-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .mapa {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .horario-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .formulario-content {
+        padding: 1.5rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+        padding-right: 1.5rem;
+    }
+}
